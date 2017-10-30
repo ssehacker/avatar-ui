@@ -1,0 +1,29 @@
+@import "../../style/vars";
+
+@btn-prefix-cls: ~"@{ui-prefix}-btn";
+
+.@{btn-prefix-cls} {
+  cursor: pointer;
+  font-size: @font-size-base;
+  border-radius: 4px;
+  transition: background-color .3s linear;
+  border: 1px solid @color-border;
+  color: @color-font;
+  background: white;
+  padding: 0 1em;
+
+  // custom
+  &-primary {
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+  }
+
+  &-size-large {
+    height: @btn-height-lg;
+  }
+
+  &-size-medium {
+    height: @btn-height-base;
+  }
+}
